@@ -1,0 +1,387 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Source Sans Pro", Arial, sans-serif;
+
+}
+
+
+main
+{
+    position: relative;
+    width: 100%;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+#a
+{
+    position: relative;
+    background-color:black;
+    width: 100%;
+    height: 40vw;
+    background-image: url("../images/image1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#cont-text-pres
+{
+    position: absolute;
+    width: 90vw;
+    color: white;
+    bottom: 70px;
+    
+}
+#text1
+{
+    font-size: 50px;
+    font-weight: 900 ;
+}
+#text2
+{
+    font-size: 40px;
+    font-weight: 900 ;
+}
+#cont-text-pres input
+{
+    width: 90vw;
+    height: 4vw;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    padding-left: 30px;
+
+}
+@keyframes aparecer {
+    0%   {opacity: 0;}
+    
+    
+    
+    100% {opacity:100%}
+  }
+  .cont-principal
+  {
+      position: relative;
+      width: 100%;
+      height: auto;
+
+  }
+  .contmusicaposter
+  {
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+      
+  }
+  .contenedor_poster_artista
+  {
+      position: relative;
+      width: 90%;
+      height: auto;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      height: 35vw;
+      justify-content: space-between;
+      transition: all 1s;
+      
+  }
+  h2
+  {
+      width: 90%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  .loadimage
+  {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-image: url("../images/lazo.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20vw;
+      height: 20vw;
+      animation: load 1s infinite;
+      animation-timing-function: linear;
+
+      
+  }
+  #artistasm
+  {
+      position: relative;
+      width: 90%;
+      margin-left: 5%;
+      height: 30vw;
+      background-color: red;
+      display: flex;
+      margin-top:3%;
+      margin-bottom: 3%;
+  }
+  .imagesartista
+  {
+      position: relative;
+      width: 33.3333%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-flex;
+  }
+  .filtro
+  {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 10000;
+      background-color:rgba(64, 41, 70, 0.5);
+      color: white;
+      display:flex;
+      align-items: center;
+      font-size: 30px;
+      padding-left: 3%;
+
+  }
+  
+  @keyframes load
+  {
+     0%
+     {
+         transform: rotate(0deg);
+     }
+     100%
+     {
+         transform: rotate(360deg);
+     }
+  }
+  .contposter
+  {
+      position: relative;
+      width: 25%;
+      height: 35vw;
+      display: inline-flex;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-basis: 25%;
+      padding-right: 1%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      background-image: url("../images/original.png");
+  }
+  .poster
+  {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .poster div{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    background-color: rgba(0,0,0,0.0);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:transparent;
+
+
+
+  }
+  .poster div:hover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:white;
+  background-color: rgba(0,0,0,0.5);
+}
+  .cont_desc_musica
+  {
+      position: relative;
+      width: 100%;
+      height: 15%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .nombrecancion
+  {
+      position: relative;
+      font-weight: bold;
+      font-size: 20px;
+      overflow-wrap: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      
+  }
+  .nombreartista
+  {
+      position: relative;
+      color:white;
+      display: flex;
+      
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+
+      
+  }
+
+  .nombreartista a{
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 2vw;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    color:white;
+      background-color:rgb(60, 37,65) ;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  .flecha_derecha
+  {
+      position: absolute;
+      width: 5vw;
+      height: 5vw;
+      top:0;
+      z-index: 1000;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      right: 0;
+      top:0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      filter: invert(14%) sepia(22%) saturate(1278%) hue-rotate(243deg) brightness(94%) contrast(90%);
+      cursor: pointer;
+  }
+  .flecha_izquierda
+  {
+      position: absolute;
+      width: 5vw;
+      height: 5vw;
+      top:0;
+      z-index: 10000;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 0;
+      top:0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      transform: rotate(180deg);
+      filter: invert(14%) sepia(22%) saturate(1278%) hue-rotate(243deg) brightness(94%) contrast(90%);
+      cursor: pointer;
+
+  }
+  footer
+  {
+      position: relative;
+      width: 100%;
+      margin-top: 2%;
+      background-color: rgb(60, 37,65);
+      display: flex;
+      height: 15vw;
+      overflow: hidden;
+  }
+  .logofooter
+  {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      display: inline-flex;
+      background-image: url("../images/LOGO2.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .itemfooter
+  {
+    position: relative;
+    width: 25%;
+    display: inline-flex;
+
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    top:5vw;
+  }
+  #cont_res_buscador
+  {
+      position: absolute;
+      width: 100%;
+      background-color: white;
+      top:100%;
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 1000;
+  }
+  .res_buscador
+  {
+      position: relative;
+      width: 100%;
+      color: black;
+      border: solid black 1px;
+      padding: 0.5%;
+      background-color: white;
+      text-decoration: none;
+      
+
+  }
+ #twitter,#facebook,#youtube
+ {
+     position: relative;
+ }
+  #twitter span::before,#facebook span::before,#youtube span::before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-height: 20px;
+    right: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  #twitter span::before
+  {
+    background-image: url(../images/twitter.png);
+    background-size: 30% 50%;
+  }
+  #facebook span::before
+  {
+    background-image: url(../images/facebook.png);
+    background-size: 30% 90%;
+  }
+  #youtube span::before
+  {
+    background-image: url(../images/youtube.png);
+    background-size: 30% 90%;
+  }

@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Source Sans Pro", Arial, sans-serif;
+
+}
+
+
+main
+{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+#cont_presentacion
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(16.08%, 34.90%, 54.51%, 1.00) 150px, rgba(23.53%, 41.96%, 61.18%, 0.84) 100%),url(../images/image1.jpg);
+    
+}
+#cont_poster
+{
+    position: relative;
+    display: inline-flex;
+    width: 20%;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#cont_poster a{
+    position: absolute;
+    bottom: -10%;
+    text-decoration: none;
+    color: aqua;
+    
+
+}
+#cont_poster iframe
+{
+    position: absolute;
+    bottom: -35%;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#seccion_musica
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+#contenedormusica
+{
+    position: relative;
+    width: 80%;
+    
+}
+#titulos
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+}
+#titulos div
+{
+    position: relative;
+    width: 25%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(66, 63, 63);
+    height: 3vw;
+}
+.temax
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    border-bottom: solid black 1px;
+}
+.temax div
+{
+    position: relative;
+    display: inline-flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+    text-align: justify;
+    white-space: pre-line;
+
+}
+.t_foto
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    height: 3vw;
+    width: 3vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.t_vista
+{
+    padding: 1%;
+}
+.vista
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+footer
+  {
+      position: relative;
+      width: 100%;
+      margin-top: 2%;
+      background-color: rgb(60, 37,65);
+      display: flex;
+      height: 15vw;
+      overflow: hidden;
+  }
+  .logofooter
+  {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      display: inline-flex;
+      background-image: url("../images/LOGO2.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .itemfooter
+  {
+    position: relative;
+    width: 25%;
+    display: inline-flex;
+
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    top:5vw;
+  }

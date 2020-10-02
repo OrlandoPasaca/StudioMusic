@@ -1,0 +1,169 @@
+nav
+{
+    position: relative;
+    width: 100%;
+    background-color:rgb(60, 37,65);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    border-bottom: solid white 1px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    z-index: 100;
+    background-color:rgb(60, 37,65);
+
+}
+#logo
+{
+    position: relative;
+    width: 10vw;
+    height: 5vw;
+    margin-left: 2%;
+    background-image: url("../images/LOGO2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+li
+{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    height: 5vw;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-flex;
+    margin-right: 2%;
+    align-items: center;
+    
+}
+#cont_menu_cat
+  {
+      position: absolute;
+      width: 100vw;
+      height: 10vw;
+      left: 0;
+      top:-100%;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      transition: top ease 0.5s;
+      background-color:rgb(60, 37,65);
+  }
+  #cont_menu_cat:hover
+  {
+      
+      top:100%;
+      
+      
+  }
+  .cont_categoria
+  {
+      position: relative;
+      display: inline-flex;
+      width: 10%;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .cont_categoria a
+  {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-decoration: none;
+
+  }
+  .icon_categoria
+  {
+      position: relative;
+      width: 50%;
+      height: 5vw;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: invert(99%) sepia(19%) saturate(2%) hue-rotate(352deg) brightness(113%) contrast(100%);
+  }
+  .categoria
+  {
+      position: relative;
+      width: 100%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      
+  }
+  footer
+  {
+      position: relative;
+      width: 100%;
+      margin-top: 2%;
+      background-color: rgb(60, 37,65);
+      display: flex;
+      height: 15vw;
+      overflow: hidden;
+  }
+  .logofooter
+  {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      display: inline-flex;
+      background-image: url("../images/LOGO2.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .itemfooter
+  {
+    position: relative;
+    width: 25%;
+    display: inline-flex;
+
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    top:5vw;
+  }
+  p a{
+      text-decoration: none;
+      color: white;
+  }
+  #twitter,#facebook,#youtube
+ {
+     position: relative;
+ }
+  #twitter span::before,#facebook span::before,#youtube span::before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-height: 20px;
+    right: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  #twitter span::before
+  {
+    background-image: url(../images/twitter.png);
+    background-size: 30% 50%;
+  }
+  #facebook span::before
+  {
+    background-image: url(../images/facebook.png);
+    background-size: 30% 90%;
+  }
+  #youtube span::before
+  {
+    background-image: url(../images/youtube.png);
+    background-size: 30% 90%;
+  }
